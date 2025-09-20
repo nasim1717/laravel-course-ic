@@ -1,9 +1,0 @@
-1. Installing laratrust
-    -  composer require santigarcor/laratrust
-    -  php artisan vendor:publish --tag="laratrust"
-    -  php artisan config:clear
-    -  php artisan laratrust:setup
-
-https://laratrust.santigarcor.me
-https://github.com/santigarcor/laratrust
-
