@@ -1,0 +1,52 @@
+1. php artisan make:mail WelcomeMail
+2. App/Mail/WelcomeMail.php
+3. WelcomeMailTemplate.blade.php
+4. Create A MailSending Controller
+    - php artisan make:controller MailSendingController
+    - sendEmail() Function
+    - Mail Template
+    - Connect Mail Template With WelcomeMail
+    - Pass WelcomeMail Data to WelcomeMailTemplate
+
+
+5. Mail server config:
+        - First See the Mail Works With Log
+
+6. Email SMTP 3rd Party
+        - MailTrap
+        - MailGun
+
+
+7. Create A SMTP Config FROM Your Self Domain Hosting
+    - Mail: laravel@teamrabbil.com
+    - Pass: 0k3rsba9ZB345RFX
+    - Outgoing: mail.teamrabbil.com
+    - Server SMTP PORT:465
+
+
+8. Manage Queue For Email
+        - QUEUE_CONNECTION=database
+        - php artisan queue:work
+
+
+9. Make Your OWN SMTP Server
+- VPS Server
+- Ubuntu 22.04
+- Ubuntu Node js
+- npm install -g Haraka
+- haraka -i /path/to/haraka_test
+- haraka -c /path/to/haraka_test
+- https://haraka.github.io/
+- Deploy Haraka https://github.com/haraka/Haraka
+- MySQL Database For Mail Subject & Body
+- Storage Folder/ For Mail Attachment
+
+9. https://ipgeolocation.io
+    - Laravel Project
+    - Database IP -> Geolocation Details
+    - API ->IP INPUT--> Geolocation Details SELECT
+    - IP2Region Take Database From 
+
+
+
+
