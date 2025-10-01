@@ -1,0 +1,17 @@
+1. B2B Request-Response
+    - Back End to Back End Communication
+2. Why Should We Call External API From Laravel Back End
+    - SMS Service
+    - Email API Service
+    - Payment Getaway Service
+    - IP Geolocation Service
+    - Paid 3rd Party API
+    - Google Paid Credential API Use
+
+3. What inside Laravel For this
+    - HTTP Request Feature
+    - (Raw PHP) PHP CURL
+
+
+4. To Practice this topic
+    - You Need a production level live back end API
