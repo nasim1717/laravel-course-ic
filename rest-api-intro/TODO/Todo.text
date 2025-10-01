@@ -1,0 +1,98 @@
+1. Install Laravel API and Sanctum
+    - php artisan install:api
+
+2. Prepare User Model
+
+3. Create AuthController
+    - php artisan make:controller AuthController
+    - Make login and register methods + Postman Test
+    - Read user profile + Postman Test
+    - Logout + Postman Test
+
+
+// Task Manager
+1. php artisan make:migration create_tasks_table
+2. php artisan make:model Task
+3. php artisan make:controller TaskController
+4. TaskList API + Postman Test
+5. TaskCreate API + Postman Test
+6. TaskUpdate API + Postman Test
+7. TaskDelete API + Postman Test
+8. TaskSummary API + Postman Test
+
+
+// Postman
+- Testing Done
+- Documentation
+- Publish Documentation
+- https://documenter.getpostman.com/view/39406886/2sB3HhsNGA
+
+-
+// JWT
+https://github.com/firebase/php-jwt
+
+
+// Permission & Role
+https://spatie.be/docs/laravel-permission/v6/introduction
+
+Team
+0. Manager
+1. Senior
+2. Mid
+3. Junior
+
+SaaS
+- Multi-tenant SaaS( Small Features )
+- Soiled SaaS (Distributed)
+- 8 Core 16GB RAM Zone 01: 30 Client
+- 8 Core 16GB RAM Zone 02: 30 Client
+- 8 Core 16GB RAM Zone 03: 30 Client
+
+- GitHub-->Branch(Middle-East)--> Laravel--> Client Table--> Subdomain->Database-> Laravel Installer--> Email
+
+-
+- Mobile APP Rest API
+- Next JS Rest API
+- B2B, B2C
+- Back End / Front End
+- Monolith (Back End + Front End)
+
+
+-- SQL--> Laravel --> Redis --> Next JS Back End-----> Next Front  || 400 -> 350
+
+Livewire=5
+React=500
+Laravel=300
+5:500
+
+------
+React=500, Vue=100, Next=400,
+Laravel=300
+------
+
+Controller, Model , Request, Resources,
+Simple Relation Ship
+Cache File/Redis
+React
+Redix-UI(NO)
+ShadcnUI(YES)
+Starter KIT (NO)
+Filament (NO)
+Svelt(NO)
+Postgres SQL (No)
+MySQL (Yes)
+GraphQL (No)
+Rest API (Yes)
+Beginner Tailwind css (সাবধান) / ShadcnUI
+Realtime (No)
+
+
+------
+
+
+1.
+2.
+3.
+
+
+

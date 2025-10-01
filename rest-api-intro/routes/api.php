@@ -1,0 +1,29 @@
+<?php
+
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\TaskController;
+use Illuminate\Support\Facades\Route;
+
+
+//Before Login
+Route::post("/register",[AuthController::class,'register']);
+Route::post("/login",[AuthController::class,'login']);
+Route::get('/login', fn () => response()->json(['message' => 'Please login'], 401))->name('login');
+
+
+// After Login
+Route::middleware(['auth:sanctum'])->group(function(){
+      Route::post("/logout",[AuthController::class,'logout']);
+      Route::get("/profile",[AuthController::class,'profile']);
+});
+
+
+// Task Manager API : After Login
+Route::middleware(['auth:sanctum'])->group(function(){
+    Route::get("/tasks/list",[TaskController::class,'TaskList']);
+    Route::post("/tasks/create",[TaskController::class,'TaskCreate']);
+    Route::post("/tasks/update/{id}",[TaskController::class,'TaskUpdate']);
+    Route::post("/tasks/delete/{id}",[TaskController::class,'TaskDelete']);
+    Route::get("/tasks/summary",[TaskController::class,'TaskSummary']);
+});
+
