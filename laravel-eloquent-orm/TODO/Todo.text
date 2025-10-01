@@ -1,0 +1,12 @@
+1. What is Eloquent ORM
+2. Table Representative -> Model
+
+3. How to create a Model & Naming Convention
+   - php artisan make:model Category
+   - php artisan make:model Customer
+   - php artisan make:model FailedJob
+
+4. Data Insert
+-> Controller->Model->DB->Table
+
+
