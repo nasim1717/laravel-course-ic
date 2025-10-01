@@ -1,0 +1,63 @@
+1. How Why What is Debugging & Testing 
+   -  Debugging -> Bug Finding 
+   -  Understand complex logic step-by-step
+   -  Small mistakes
+   -  Break down and test large functions
+   -  Understanding other people's code
+   -  Improvment-> testing, performance, code quality
+   -  Application Action Flow , Code Flow 
+   -  Inspecting Each & Every Lines of Execution 
+
+
+2. Laravel Debugging Ways 
+    -(1) Using Default Laravel Log Features 
+    -(2) Debugging Helper dd()
+    -(3) Debugging Helper dump()
+    -(4) Advanced Debugging Laravel Telescope
+    -(5) More Advanced Level Line By Line Execution PHP Xdebug
+
+
+3. laravel new test-app
+
+
+4. Using Default Laravel Log Features (Deplopment+Production Purpose)
+5. Debugging Helper dd() dump & die (Deplopment Purpose)
+6. Debugging Helper dump()(Deplopment Purpose)
+7. Laravel Telescope (Deplopment Purpose) (Production Purpose)
+
+
+8. More Advanced Level Line By Line Execution PHP Xdebug (Deplopment Purpose)
+    - Step Over -> Go For Next Execution
+    - Step Into -> Go Inside functions
+    - Step Out -> Out Inside functions
+    - View Break Points-> Show All Break Points Inside Your Project
+    - Mute Break Points-> Skipping The Break Points
+    - Stop -> Debugging Stop
+    - Resume-> Resume The The Execution Process
+    - Threads & Variables -> Shows What happpnening Inside Execution
+    - Console/Output -> Console print 
+    - Evaluate Expression -> Playing With Your Already Executed Expressions and codes
+
+
+
+9. 
+
+- Paste `XDebug` dll file inside XAMPP/php/ext 
+- Open php.ini and add properties 
+
+- `xdebug.mode=debug`
+- `xdebug.start_with_request=yes`
+- `xdebug.client_port=9003`
+- `xdebug.client_host = localhost`
+- `zend_extension="C:\xampp\php\ext\xdebug.dll"`
+
+
+- Again check PHP version in terminal` php -v`
+
+
+10. Reference Videos
+https://www.youtube.com/watch?v=QuIP_jR-E7w
+https://www.youtube.com/@LaravelPoint/videos
+
+
+
