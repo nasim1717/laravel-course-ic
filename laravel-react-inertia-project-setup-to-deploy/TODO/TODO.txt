@@ -1,0 +1,89 @@
+1. Laravel MIX is deprecated, migrate to Vite.
+2. Laravel Inertia -> React Add
+3. Laravel Default Template Blade
+4. Blade-> React JS Inertia Integration
+
+Server-side:
+======================================
+Step 01: composer require inertiajs/inertia-laravel
+
+Step 02: Root template app.blade.php
+
+Step 03: php artisan inertia:middleware
+
+Step 04: Manage HandleInertiaRequests Share Data
+
+Client-side setup:
+======================================
+Step 01: npm install @inertiajs/react ,  pnpm add @inertiajs/react
+Step 02: app.js setup
+Step 03: npm install react-dom ,  pnpm add react-dom
+Step 04: npm install nprogress, pnpm add nprogress
+Step 06: npm install @inertiajs/inertia-react, pnpm add @inertiajs/inertia-react
+Step 07: npm install @vitejs/plugin-react, pnpm add @vitejs/plugin-react
+Step 08: npm install react, pnpm add react
+Step 09: Vite config file setup
+
+Progress Bar Setup:
+======================================
+Step 01: npm install nprogress, pnpm add nprogress
+Step 02: app.js setup
+Step 03: app.css setup
+
+
+
+Lets Make Pages:
+======================================
+- Create a new folder named Pages in resources/js
+- Create a new file named Home.jsx in resources/js/Pages
+
+Lets Make Controller And Route:
+======================================
+Step 01: php artisan make:controller SiteController
+Step 02: return Inertia::render('Home');
+Step 03: add route in web.php
+
+Lets Run The Project:
+======================================
+Step 01: php artisan serve
+Step 02: npm run dev , pnpm dev
+
+Link Page to Page:
+======================================
+Step 01: User Inertia Link Component
+
+
+How to prepare for Production:
+======================================
+Step 01: npm run build , pnpm build
+Step 02: php artisan optimize:clear
+Step 03: .env file setup APP_ENV=production
+
+
+How to deploy on cPanel:
+======================================
+1. Create a new database and user and assign all privileges to the user.
+2. Update the .env file with the new database credentials.
+3. Import Exported database using phpMyAdmin.
+4. Prepare deployment files for production.
+5. prepare .env file for production.
+6. Delete hot file from public directory if exists.
+7. .htaccess file setup in public directory.
+8. .htaccess file setup in root directory.
+
+======================================
+Troubleshooting:
+1. .htaccess file not working, rename htaccess.txt to .htaccess
+2. 500 internal server error, check storage and bootstrap/cache permission 775 or 777
+3. hot file exists in public directory, delete it.
+4. php version not supported, change php version to 8.0 or above.
+5. database connection error, check database credentials in .env file.
+======================================
+
+Deployment Panel:
+1. Cpanel (Rabbil)-> BD Domain Hosting Provider, Low Cost
+2. Plesk (Rabbil)
+3. Laravel Forge (AKRAM)
+4. aapanel (Rabbil)
+5. Hpanel Hostinger (Rabbil)
+6. Raw Terminal Command - VPS-EC2- AWS,GCP,AZURE,Digital Ocean,Vultr,OvhCloude,Conatabo,BDIX (Rabbil+AKRAM+HASIN)
